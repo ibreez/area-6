@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QR Generator</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body style="text-align:center; font-family:Arial; padding-top:50px;">
+
+<h2>Scan to Contact Us</h2>
+<div id="qrcode"></div>
+
+<script>
+let url = "https://your-domain.com/index.html"; 
+// change this to your real hosted link
+
+new QRCode(document.getElementById("qrcode"), {
+    text: url,
+    width: 220,
+    height: 220
+});
+</script>
+
+</body>
+</html>
