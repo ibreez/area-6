@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Area 6 ELITE - Contact</title>
 
-<!-- Google Fonts for Modern Typography -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
@@ -32,7 +31,7 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 40px 30px;
+    padding: 35px 30px;
     border-radius: 24px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 
                 inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -45,6 +44,14 @@ body {
 /* Subtle hover effect for the whole card */
 .card:hover {
     transform: translateY(-5px);
+}
+
+/* Logo Image Styling */
+.brand-logo {
+    width: 130px;
+    height: auto;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 4px 10px rgba(0, 114, 255, 0.3));
 }
 
 .brand-title {
@@ -62,7 +69,10 @@ body {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 4px;
-    color: #d4af37; /* Premium Gold Accent */
+    /* Updated from Gold to Electric Blue gradient to match your logo */
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -70,7 +80,7 @@ body {
 .tagline {
     font-size: 12px;
     color: #888;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-weight: 400;
 }
 
@@ -129,21 +139,20 @@ body {
 <body>
 
 <div class="card">
+    <img class="brand-logo" src="logo.png" alt="Area 6 Elite Logo">
+
     <h1 class="brand-title">Area 6</h1>
     <h2 class="brand-subtitle">Elite</h2>
     <p class="tagline">DRIVEN BY VISION. BUILT FOR GROWTH</p>
 
-    <!-- Call -->
     <a class="btn call" href="tel:+9607379902">
         <span>Call Now</span>
     </a>
 
-    <!-- WhatsApp -->
     <a class="btn whatsapp" href="https://wa.me/9607379902" target="_blank">
         <span>WhatsApp</span>
     </a>
 
-    <!-- Viber -->
     <a class="btn viber" href="viber://chat?number=%2B9607379902">
         <span>Viber Chat</span>
     </a>
